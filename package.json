@@ -1,7 +1,7 @@
 {
-  "name": "baileys",
-  "version": "8.5.12",
-  "description": "WhatsApp API",
+  "name": "@suzakuteam/baileys",
+  "version": "1.0.0",
+  "description": "WhatsApp API For Interact In WhatsApp",
   "keywords": [
     "Baileys",
     "whiskeysockets/baileys",
@@ -15,12 +15,12 @@
     "whatsapp-group",
     "multi-device"
   ],
-  "homepage": "https://github.com/Whiskeysockets/Baileys",
+  "homepage": "https://github.com/SuzakuTeam/Baileys",
   "repository": {
     "url": ""
   },
   "license": "MIT",
-  "author": "Adhiraj Singh",
+  "author": "SuzakuTeam",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [

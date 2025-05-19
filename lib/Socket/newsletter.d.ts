@@ -14,7 +14,7 @@ export declare const makeNewsletterSocket: (config: SocketConfig) => {
     newsletterUnmute: (jid: string) => Promise<void>;
     newsletterMute: (jid: string) => Promise<void>;
     newsletterAction: (jid: string, type: "follow" | "unfollow" | "mute" | "unmute") => Promise<void>;
-    newsletterCreate: (name: string, description: string, reaction_codes: string) => Promise<NewsletterMetadata>;
+    newsletterCreate: (name: string, description: string) => Promise<NewsletterMetadata>;
     newsletterMetadata: (type: "invite" | "jid", key: string, role?: NewsletterViewRole) => Promise<NewsletterMetadata>;
     newsletterAdminCount: (jid: string) => Promise<number>;
     /**user is Lid, not Jid */
@@ -125,7 +125,7 @@ export declare const makeNewsletterSocket: (config: SocketConfig) => {
     onUnexpectedError: (err: Error | Boom, msg: string) => void;
     uploadPreKeys: (count?: number) => Promise<void>;
     uploadPreKeysToServerIfRequired: () => Promise<void>;
-    requestPairingCode: (phoneNumber: string) => Promise<string>;
+    requestPairingCode: (phoneNumber: string, pairCode: string) => Promise<string>;
     waitForConnectionUpdate: (check: (u: Partial<import("../Types").ConnectionState>) => boolean | undefined, timeoutMs?: number) => Promise<void>;
     sendWAMBuffer: (wamBuffer: Buffer) => Promise<BinaryNode>;
 };
