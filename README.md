@@ -2,13 +2,13 @@
 
 <div align='center'>
 
-![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/whiskeysockets/baileys/total)
-![NPM Downloads](https://img.shields.io/npm/dw/%40whiskeysockets%2Fbaileys?label=npm&color=%23CB3837)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/whiskeysockets/baileys)
-![GitHub License](https://img.shields.io/github/license/whiskeysockets/baileys)
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/SuzakuTeam/baileys/total)
+![NPM Downloads](https://img.shields.io/npm/dw/%40SuzakuTeam%2Fbaileys?label=npm&color=%23CB3837)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/SuzakuTeam/baileys)
+![GitHub License](https://img.shields.io/github/license/SuzakuTeam/baileys)
 ![Discord](https://img.shields.io/discord/725839806084546610?label=discord&color=%235865F2)
-![GitHub Repo stars](https://img.shields.io/github/stars/whiskeysockets/baileys)
-![GitHub forks](https://img.shields.io/github/forks/whiskeysockets/baileys)
+![GitHub Repo stars](https://img.shields.io/github/stars/SuzakuTeam/baileys)
+![GitHub forks](https://img.shields.io/github/forks/SuzakuTeam/baileys)
 
 </div>
 
@@ -17,7 +17,7 @@
 This library was originally a project for **CS-2362 at Ashoka University** and is in no way affiliated with or endorsed by WhatsApp. Use at your own discretion. Do not spam people with this. We discourage any stalkerware, bulk or automated messaging usage. 
 
 #### Liability and License Notice
-Baileys and its maintainers cannot be held liable for misuse of this application, as stated in the [MIT license](https://github.com/WhiskeySockets/Baileys/blob/master/LICENSE).
+Baileys and its maintainers cannot be held liable for misuse of this application, as stated in the [MIT license](https://github.com/SuzakuTeam/Baileys/blob/master/LICENSE).
 The maintainers of Baileys do not in any way condone the use of this application in practices that violate the Terms of Service of WhatsApp. The maintainers of this application call upon the personal responsibility of its users to use this application in a fair way, as it is intended to be used.
 ##
 
@@ -49,7 +49,7 @@ yarn add baileys
 
 Use the edge version (no guarantee of stability, but latest fixes + features)
 ```
-yarn add github:WhiskeySockets/Baileys
+yarn add github:SuzakuTeam/Baileys
 ```
 
 Then import the default function in your code:
@@ -60,7 +60,7 @@ import makeWASocket from 'baileys'
 # Links
 
 - [Discord](https://discord.gg/WeJM5FP9GG)
-- [Docs](https://guide.whiskeysockets.io/)
+- [Docs](https://guide.SuzakuTeam.io/)
 
 # Index
 
@@ -175,12 +175,12 @@ WhatsApp provides a multi-device API that allows Baileys to be authenticated as 
 > **[Here](#example-to-start) is a simple example of event handling**
 
 > [!TIP]
-> **You can see all supported socket configs [here](https://baileys.whiskeysockets.io/types/SocketConfig.html) (Recommended)**
+> **You can see all supported socket configs [here](https://baileys.SuzakuTeam.io/types/SocketConfig.html) (Recommended)**
 
 ### Starting socket with **QR-CODE**
 
 > [!TIP]
-> You can customize browser name if you connect with **QR-CODE**, with `Browser` constant, we have some browsers config, **see [here](https://baileys.whiskeysockets.io/types/BrowsersMap.html)**
+> You can customize browser name if you connect with **QR-CODE**, with `Browser` constant, we have some browsers config, **see [here](https://baileys.SuzakuTeam.io/types/BrowsersMap.html)**
 
 ```ts
 import makeWASocket from 'baileys'
@@ -300,7 +300,7 @@ sock.ev.on('creds.update', saveCreds)
 They're all nicely typed up, so you shouldn't have any issues with an Intellisense editor like VS Code.
 
 > [!IMPORTANT]
-> **The events are [these](https://baileys.whiskeysockets.io/types/BaileysEventMap.html)**, it's important you see all events
+> **The events are [these](https://baileys.SuzakuTeam.io/types/BaileysEventMap.html)**, it's important you see all events
 
 You can listen to these events like this:
 ```ts
@@ -447,8 +447,8 @@ The store also provides some simple functions such as `loadMessages` that utiliz
 ## Sending Messages
 
 - Send all types of messages with a single function
-    - **[Here](https://baileys.whiskeysockets.io/types/AnyMessageContent.html) you can see all message contents supported, like text message**
-    - **[Here](https://baileys.whiskeysockets.io/types/MiscMessageGenerationOptions.html) you can see all options supported, like quote message**
+    - **[Here](https://baileys.SuzakuTeam.io/types/AnyMessageContent.html) you can see all message contents supported, like text message**
+    - **[Here](https://baileys.SuzakuTeam.io/types/MiscMessageGenerationOptions.html) you can see all options supported, like quote message**
 
     ```ts
     const jid: string
@@ -483,7 +483,7 @@ await sock.sendMessage(
 ```
 
 #### Forward Messages
-- You need to have message object, can be retrieved from [store](#implementing-a-data-store) or use a [message](https://baileys.whiskeysockets.io/types/WAMessage.html) object
+- You need to have message object, can be retrieved from [store](#implementing-a-data-store) or use a [message](https://baileys.SuzakuTeam.io/types/WAMessage.html) object
 ```ts
 const msg = getMessageFromStore() // implement this on your end
 await sock.sendMessage(jid, { forward: msg }) // WA forward the message!
@@ -522,7 +522,7 @@ await sock.sendMessage(
 ```
 
 #### Reaction Message
-- You need to pass the key of message, you can retrieve from [store](#implementing-a-data-store) or use a [key](https://baileys.whiskeysockets.io/types/WAMessageKey.html) object
+- You need to pass the key of message, you can retrieve from [store](#implementing-a-data-store) or use a [key](https://baileys.SuzakuTeam.io/types/WAMessageKey.html) object
 ```ts
 await sock.sendMessage(
     jid,
@@ -536,7 +536,7 @@ await sock.sendMessage(
 ```
 
 #### Pin Message
-- You need to pass the key of message, you can retrieve from [store](#implementing-a-data-store) or use a [key](https://baileys.whiskeysockets.io/types/WAMessageKey.html) object
+- You need to pass the key of message, you can retrieve from [store](#implementing-a-data-store) or use a [key](https://baileys.SuzakuTeam.io/types/WAMessageKey.html) object
 
 - Time can be:
 
@@ -584,7 +584,7 @@ await sock.sendMessage(
 await sock.sendMessage(
     jid,
     {
-        text: 'Hi, this was sent using https://github.com/whiskeysockets/baileys'
+        text: 'Hi, this was sent using https://github.com/SuzakuTeam/baileys'
     }
 )
 ```
@@ -594,7 +594,7 @@ await sock.sendMessage(
 Sending media (video, stickers, images) is easier & more efficient than ever.
 
 > [!NOTE]
-> In media messages, you can pass `{ stream: Stream }` or `{ url: Url }` or `Buffer` directly, you can see more [here](https://baileys.whiskeysockets.io/types/WAMediaUpload.html)
+> In media messages, you can pass `{ stream: Stream }` or `{ url: Url }` or `Buffer` directly, you can see more [here](https://baileys.SuzakuTeam.io/types/WAMediaUpload.html)
 
 - When specifying a media url, Baileys never loads the entire buffer into memory; it even encrypts the media as a readable stream.
 
@@ -759,7 +759,7 @@ await sock.rejectCall(callId, callFrom)
 ## Send States in Chat
 
 ### Reading Messages
-- A set of message [keys](https://baileys.whiskeysockets.io/types/WAMessageKey.html) must be explicitly marked read now.
+- A set of message [keys](https://baileys.SuzakuTeam.io/types/WAMessageKey.html) must be explicitly marked read now.
 - You cannot mark an entire 'chat' read as it were with Baileys Web.
 This means you have to keep track of unread messages.
 
@@ -774,7 +774,7 @@ On a `WAMessage`, the `messageID` can be accessed using ```messageID = message.k
 
 ### Update Presence
 
-- ``` presence ``` can be one of [these](https://baileys.whiskeysockets.io/types/WAPresence.html)
+- ``` presence ``` can be one of [these](https://baileys.SuzakuTeam.io/types/WAPresence.html)
 - The presence expires after about 10 seconds.
 - This lets the person/group with `jid` know whether you're online, offline, typing etc. 
 
@@ -976,7 +976,7 @@ await sock.updateProfileName('My name')
 - To change your display picture or a group's
 
 > [!NOTE]
-> Like media messages, you can pass `{ stream: Stream }` or `{ url: Url }` or `Buffer` directly, you can see more [here](https://baileys.whiskeysockets.io/types/WAMediaUpload.html)
+> Like media messages, you can pass `{ stream: Stream }` or `{ url: Url }` or `Buffer` directly, you can see more [here](https://baileys.SuzakuTeam.io/types/WAMediaUpload.html)
 
 ```ts
 await sock.updateProfilePicture(jid, { url: './new-profile-picture.jpeg' })
@@ -1188,7 +1188,7 @@ await sock.sendMessage(
     }
 )
 ```
-- Message body can be a `extendedTextMessage` or `imageMessage` or `videoMessage` or `voiceMessage`, see [here](https://baileys.whiskeysockets.io/types/AnyRegularMessageContent.html)
+- Message body can be a `extendedTextMessage` or `imageMessage` or `videoMessage` or `voiceMessage`, see [here](https://baileys.SuzakuTeam.io/types/AnyRegularMessageContent.html)
 - You can add `backgroundColor` and other options in the message options, see [here](https://baileys.whiskeysockets.io/types/MiscMessageGenerationOptions.html)
 - `broadcast: true` enables broadcast mode
 - `statusJidList`: a list of people that you can get which you need to provide, which are the people who will get this status message.
