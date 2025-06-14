@@ -1,7 +1,7 @@
 {
   "name": "@suzakuteam/baileys",
-  "version": "2.7.8",
-  "description": "WA - API",
+  "version": "1.0.6",
+  "description": "WhatsApp API For Interact In WhatsApp",
   "keywords": [
     "Baileys",
     "whiskeysockets/baileys",
@@ -111,6 +111,6 @@
     "lib": "lib"
   },
   "bugs": {
-    "url": "https://github.com/SuzakuTeam/Baileys/issues"
+    "url": "https://github.com/FizzxyDev/Baileys/issues"
   }
 }
