@@ -212,7 +212,10 @@ const sock = makeWASocket({
 // NOTE: WAIT TILL QR EVENT BEFORE REQUESTING THE PAIRING CODE
 if (!sock.authState.creds.registered) {
     const number = 'XXXXXXXXXXX'
-    const code = await sock.requestPairingCode(number)
+    const code = await sock.requestPairingCode(number, {
+        customKey: String, // Custom Pairing Available (Max 8 Character)
+        isRandomPairing: Boolean  // True/False for random pairing (customKey Change To = "")
+    })
     console.log(code)
 }
 ```
